@@ -4,7 +4,7 @@ rem ----------------------------------------------------------------------------
 rem  read project name and current build number, create build number text with leading zeros
 rem -----------------------------------------------------------------------------------------
 
-set /p bbcProjectName=<projectname.txt
+set /p bbcProjectName=<!projectname.txt
 set /p bbcProjectBuildText=<build.txt
 set "bbcProjectBuildBin=00000%bbcProjectBuildText%"
 set "bbcProjectBuildBin=%bbcProjectBuildBin:~-6%"
